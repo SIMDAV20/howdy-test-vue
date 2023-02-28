@@ -4,6 +4,6 @@ import axios from "axios";
 
 export default new (class flightsService {
   async getData() {
-    return (await axios.get("src/fakeData.json")).data;
+    return (await axios.get("fakeData.json")).data;
   }
 })();
