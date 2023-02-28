@@ -38,7 +38,10 @@ const { formatDateTime, getHourMinutes } = useFormatTime();
           <div class="text-center">
             <p class="mb-1">{{ segment.airLineName }}</p>
             <p class="line bg-secondary rounded mb-1" style="height: 3px"></p>
-            <p class="mb-0">{{ getHourMinutes(segment.duration) }}</p>
+            <p class="mb-0">
+              {{ getHourMinutes(segment.duration) }} -
+              {{ journey.qtyStopovers }}
+            </p>
           </div>
 
           <div class="text-end">

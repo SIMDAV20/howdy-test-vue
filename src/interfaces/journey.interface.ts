@@ -41,4 +41,5 @@ export interface IJourney {
   cabinClass: string;
   duration: number;
   layovers: IMainLaoyer;
+  qtyStopovers?: string;
 }
